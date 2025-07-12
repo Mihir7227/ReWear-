@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Item - ReWear</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container mt-5">
+  <h2>Add New Clothing Item</h2>
+  <form method="POST" action="upload.php" enctype="multipart/form-data">
+    <input type="text" name="title" placeholder="Item Title" required>
+    <textarea name="description" placeholder="Item Description" required></textarea>
+    <select name="category" required>
+      <option value="">Select Category</option>
+      <option value="Men">Men</option>
+      <option value="Women">Women</option>
+      <option value="Kids">Kids</option>
+    </select>
+    <select name="size" required>
+      <option value="">Select Size</option>
+      <option value="XS">XS</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+    <select name="condition" required>
+      <option value="">Item Condition</option>
+      <option value="New">New</option>
+      <option value="Like New">Like New</option>
+      <option value="Used">Used</option>
+    </select>
+    <input type="file" name="image" required>
+    <button type="submit">Upload Item</button>
+  </form>
+</div>
+</body>
+</html>
