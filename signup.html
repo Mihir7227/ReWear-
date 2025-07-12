@@ -1,0 +1,36 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup - ReWear</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container login-box mt-5">
+  <h2 class="mb-4 text-center">Create Your Account</h2>
+  <form action="signup.php" method="POST">
+    <div class="mb-3">
+      <label>Full Name:</label>
+      <input type="text" class="form-control" name="name" placeholder="Your full name" required>
+    </div>
+    <div class="mb-3">
+      <label>Email address:</label>
+      <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+    </div>
+    <div class="mb-3">
+      <label>Create Password:</label>
+      <input type="password" class="form-control" name="password" placeholder="Enter password" required>
+    </div>
+    <div class="mb-3">
+      <label>Confirm Password:</label>
+      <input type="password" class="form-control" name="confirm" placeholder="Confirm password" required>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+    <p class="text-center mt-3">Already have an account? <a href="login.html">Login</a></p>
+  </form>
+</div>
+
+</body>
+</html>
